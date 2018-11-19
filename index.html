@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Remix-Mini - DJ Dippy</title>
+ <link rel="stylesheet" href="libs/mui.min.css">
+ <link rel="stylesheet" href="index.css">
+</head>
+<body>
+ <header class="mui-appbar"><navbar><div class="mui-container" style="float: left;">
+<p id="status" style="float: right; margin-top:20px"></p> </div> </navbar></header>
+<section class="mui-container-fluid">
+ <div class="mui-row">
+   <div class="mui-col-md-6">
+     <div class="mui-select">
+        <select id="versions"></select>
+     </div>
+
+   </div>
+
+  <div id="contract-list" class="mui-col-md-6"></div>
+<div class="mui-col-md-6">
+  <div class="mui-panel">
+    <div id="account-addresses"></div>
+  </div>
+</div>
+ </div>
+<div class="mui-panel">
+      <p style="font-size:25px; font-weight:bold">
+        Compile Contract
+      </p>
+      <textarea id="source" onclick="this.select()" style="height: 360px; width: 530px; display: block; margin-left: 20px;"></textarea>
+      <button id="contract-compile"  class="mui-btn mui-btn--primary">
+        Compile
+      </button>
+</div>
+</section>
+<section id="contractFunction" class="mui-container"></section>
+ <script src="libs/mui.min.js" type="text/javascript"></script>
+ <script src="libs/solc.min.js" type="text/javascript"></script>
+ <script src="libs/web3.min.js" type="text/javascript"></script>
+ <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
